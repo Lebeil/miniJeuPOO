@@ -12,7 +12,11 @@ class Player
     end
 
     def show_state
-        print "#{@name} a #{@life_points} points de vie"
+        if @life_points > 0
+            return "#{@name} a #{@life_points} points de vie"
+        else
+            return "#{@name} est mort"
+        end
     end
 
     def gets_damage(damage)

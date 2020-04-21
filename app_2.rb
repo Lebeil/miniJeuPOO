@@ -18,7 +18,7 @@ player2 = Player.new("José")
 
 ennemies = [player1, player2]
 
-while user_player.life_points > 0 && player1.life_points > 0 || player2.life_points > 0
+while user_player.life_points > 0 && player1.life_points > 0 || player2.life_points > 0  
     user_player.show_state
     
     puts
@@ -31,8 +31,7 @@ puts "attaquer un joueur en vue :"
 puts "0 - #{player1.show_state}"
 puts "1 - #{player2.show_state}"
 
-    puts
-    print "Faites votre choix"
+    puts "Faites votre choix "
 
     choice = gets.chomp.to_s
     case choice
@@ -63,5 +62,3 @@ if user_player.life_points <= 0
 else
   puts "La partie est finie ! Bravo ! Tu es le meilleur !!"
 end
-
-binding.pry
